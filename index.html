@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <script type="text/javascript" src="assets/script/script.js"></script>
+</head>
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+<div class="container">
+    <div id="hub">
+        <h1>Escolha o Modo de Jogo:</h1><br>
+        <button onclick="modoJogo(1)" id="bth">1 Jogador</button><br>
+        <button onclick="modoJogo(2)" id="bth">2 Jogadores</button>
+    </div>
+    <div id="teste">
+    <div id="side-panel1">
+        <label for="player1" id="nome1">Jogador 1</label>
+        <div id="agrup">
+        <input type="text" id="player1" placeholder="Nome do Jogador 1">
+        <button onclick="cadastrarJogador(1)" id="btn1">Cadastrar</button>
+        <span id="player1-wins">Vitórias: 0</span>
+    </div>
+    </div>
+
+    <div id="game-board">
+        <div class="cell" id="cell1" onclick="cellClick(this)"></div>
+        <div class="cell" id="cell2" onclick="cellClick(this)"></div>
+        <div class="cell" id="cell3" onclick="cellClick(this)"></div>
+        <div class="cell" id="cell4" onclick="cellClick(this)"></div>
+        <div class="cell" id="cell5" onclick="cellClick(this)"></div>
+        <div class="cell" id="cell6" onclick="cellClick(this)"></div>
+        <div class="cell" id="cell7" onclick="cellClick(this)"></div>
+        <div class="cell" id="cell8" onclick="cellClick(this)"></div>
+        <div class="cell" id="cell9" onclick="cellClick(this)"></div>
+    </div>
+
+    <div id="side-panel2">
+        <label for="player2" id="nome2">Jogador 2</label>
+        <div id="agrup">
+        <input type="text" id="player2" placeholder="Nome do Jogador 2">
+        <button onclick="cadastrarJogador(2)" id="btn2">Cadastrar</button>
+        <span id="player2-wins">Vitórias: 0</span>
+        </div>
+    </div>
+</div>
+    <div id="limpar">
+        <div>
+        <button onclick="limpar()">Limpar</button><br>
+    </div><div>
+        <button onclick="reset()">Resetar</button>
+    </div>
+    </div>
+</div>
+</body>
+</html>
